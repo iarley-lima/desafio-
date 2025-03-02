@@ -258,7 +258,7 @@ form button {
 
 /* Estilo pra mensagem de sucesso */
 
-.mensagem-sucesso {
+form:has(input:valid) + .mensagem-sucesso {
     display: none;
     color: green;
     font-weight: bold;

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Médica</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar topo -->
+    <header>
+        <nav class="navbar-top"> 
+            <a class="logo"> Clínica Médica </a>    
+        </nav>
+    </header>
+
+    <!-- Sidebar lateral -->
+    <aside class="sidebar">
+        <ul class="nav-list">          
+            <li><a href="#dashboard"><i class="bi bi-house-door"></i> Dashboard</a></li>
+            <li><a href="#pacientes"><i class="bi bi-person"></i> Pacientes</a></li>
+            <li><a href="#agendamentos"><i class="bi bi-calendar"></i> Agendamentos</a></li>
+            <li><a href="#relatorios"><i class="bi bi-bar-chart"></i> Relatórios</a></li>
+            <li><a href="#configuracoes"><i class="bi bi-gear"></i> Configurações</a></li>
+        </ul> 
+    </aside>   
+
+    <!-- Conteúdo do dashboard -->
+    <main class="content">
+        <section id="dashboard">
+            <h1>Bem-vindo, Usuário!</h1>
+            <p>Acompanhe os dados da clínica abaixo:</p>
+
+            <!-- Cartões -->
+            <div class="cards">
+                <div class="card">
+                    <i class="bi bi-person"></i>
+                    <h2>120</h2>
+                    <p>Pacientes Ativos</p>
+                </div>
+                <div class="card">
+                    <i class="bi bi-calendar-check"></i>
+                    <h2>15</h2>
+                    <p>Consultas Hoje</p>
+                </div>
+                <div class="card">
+                    <i class="bi bi-clock"></i>
+                    <h2>30</h2>
+                    <p>Agendamentos Futuros</p>
+                </div>
+            </div>
+
+            <!-- Gráfico -->
+            <div class="grafico">
+                <img src="grafico.png" alt="Gráfico de estatísticas">
+            </div>
+        </section>
+        
+        <!-- Cadastro do Paciente -->
+        <section id="pacientes">
+            <h1>Pacientes</h1>
+            <p>Cadastre-se aqui!</p>
+            <form>
+                <!-- Nome Completo -->
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome Completo</label>
+                    <input class="form-control" type="text" id="nome" name="nome" placeholder="Escreva seu nome completo" required>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Adicione seu e-mail" required>
+                </div>
+
+                <!-- Telefone -->
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input class="form-control" type="tel" id="telefone" name="telefone" placeholder="Adicione seu telefone" required>
+                </div>
+
+                <!-- Data de Nascimento -->
+                <div class="mb-3">
+                    <label for="data-nascimento" class="form-label">Data de Nascimento</label>
+                    <input class="form-control" type="date" id="data-nascimento" name="data-nascimento" required>
+                </div>
+
+                <!-- Botão de Cadastro -->
+                <button class="btn btn-primary w-100" type="submit">Cadastrar</button>
+            </form>
+        </section>
+        
+        <!-- outras seções do site -->
+        <section id="agendamentos">
+            <h1>Agendamentos</h1>
+            <p> Conteúdo aqui! </p>
+        </section>
+
+        <section id="relatorios">
+            <h1>Relatórios</h1>
+            <p> Conteúdo aqui! </p>
+        </section>
+
+        <section id="configuracoes">
+            <h1>Configurações</h1>
+            <p> Conteúdo aqui! </p>
+        </section>   
+    </main>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2025 Clínica Médica | Todos os direitos reservados.</p>
+        
+        <div class="social-links">
+            <a href="https://www.instagram.com/iarley.rocha_" target="_blank" class="instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
+    </footer>   
+</body>
+</html>

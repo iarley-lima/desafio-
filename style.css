@@ -266,10 +266,6 @@ form button {
     margin-top: 10px;
 }
 
-form:has(input:valid) + .mensagem-sucesso {
-    display: block;
-}
-
 .valid-feedback {
     display: none; /* Inicialmente invisível */
 }

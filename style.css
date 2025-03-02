@@ -258,7 +258,7 @@ form button {
 
 /* Estilo pra mensagem de sucesso */
 
-form:has(input:valid) + .mensagem-sucesso {
+.mensagem-sucesso {
     display: none;
     color: green;
     font-weight: bold;
@@ -266,6 +266,16 @@ form:has(input:valid) + .mensagem-sucesso {
     margin-top: 10px;
 }
 
-.mensagem-sucesso {
+form:has(input:valid) + .mensagem-sucesso {
     display: block;
 }
+
+.valid-feedback {
+    display: none; /* Inicialmente invisível */
+}
+
+/* Quando o formulário for validado pelo Bootstrap, a mensagem aparece */
+.was-validated .valid-feedback {
+    display: block;
+}
+

@@ -267,11 +267,12 @@ form button {
 }
 
 .valid-feedback {
-    display: none; /* Inicialmente invisível */
+    display: none; 
 }
 
-/* Quando o formulário for validado pelo Bootstrap, a mensagem aparece */
+/* Quando o formulário é confirmado, a mensagem aparece */
 .was-validated .valid-feedback {
     display: block;
+    color: green;
 }
 

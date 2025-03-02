@@ -255,3 +255,17 @@ form button {
 .social-links a:hover {
     color: #3d486d;
 }
+
+/* Estilo pra mensagem de sucesso */
+
+.mensagem-sucesso {
+    display: none;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mensagem-sucesso {
+    display: block;
+}

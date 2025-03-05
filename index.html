@@ -124,23 +124,7 @@
     </footer> 
         
     <!-- tive que adicionar o Java Script junto do Html para não ocorrer erros no GitHub -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const form = document.getElementById("cadastro-form");
-            const mensagemSucesso = document.getElementById("mensagem-sucesso");
-        
-            form.addEventListener("submit", function (event) {
-                event.preventDefault(); 
-                
-                if (form.checkValidity()) {
-                    form.classList.add("was-validated"); 
-                    mensagemSucesso.style.display = "block"; 
-                } else {
-                    form.classList.add("was-validated"); 
-                }
-            });
-        });
-        </script>        
+         
 </body>
 </html>
 </body>
